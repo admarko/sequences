@@ -22,13 +22,15 @@
 
       No.
   </li>
+  <li>
+    <%= @num1%>, <%= @num2%>, <%= @num3%> <%= @result%>!
+  </li>
 </ul>
 
-<form action="/show_answer">
+<form action="/all_guesses">
   <p>
     Enter a sequence:
   </p>
-
   <label for="first">First number:</label>
   <input id="first" type="text" name="first_number" placeholder="The first number">
 
@@ -37,7 +39,6 @@
 
   <label for="third">Third number:</label>
   <input id="third" type="text" name="third_number" placeholder="The third number">
-
   <button>
     Check
   </button>

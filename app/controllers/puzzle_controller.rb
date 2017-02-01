@@ -10,9 +10,9 @@ class PuzzleController < ApplicationController
     @num2 = params["second_number"].to_i
     @num3 = params["third_number"].to_i
 
-    @result = "NO"
+    @result = "No"
     if @num1 < @num2 && @num2 < @num3
-      @result = "YES"
+      @result = "Yes"
     end
 
     render("/guesses.html.erb")
