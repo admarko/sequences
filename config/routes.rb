@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-end
+    get("/all_guesses", {:controller => "puzzle", :action=>"guesses"})
+    get("/show_answer", {:controller => "puzzle", :action=>"answers"})
+    get("/",            {:controller=>"puzzle", :action=>"guesses"})
+  end
